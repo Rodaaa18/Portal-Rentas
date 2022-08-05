@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DATA_ACCESS</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ENTITIES\ENTITIES.csproj" />
+    <ProjectReference Include="..\MAPPING\MAPPING.csproj" />
+  </ItemGroup>
+
+</Project>

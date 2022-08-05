@@ -1,0 +1,10 @@
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\bin\Debug\netcoreapp3.1\DATA.deps.json
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\bin\Debug\netcoreapp3.1\DATA.dll
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\bin\Debug\netcoreapp3.1\DATA.pdb
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.csproj.AssemblyReference.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.AssemblyInfoInputs.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.AssemblyInfo.cs
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.csproj.CoreCompileInputs.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.dll
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.pdb

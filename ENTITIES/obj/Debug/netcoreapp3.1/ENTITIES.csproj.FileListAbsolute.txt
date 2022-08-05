@@ -1,0 +1,16 @@
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\ENTITIES.deps.json
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\ENTITIES.runtimeconfig.json
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\ENTITIES.runtimeconfig.dev.json
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\ENTITIES.dll
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\ENTITIES.pdb
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\DATA.dll
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\bin\Debug\netcoreapp3.1\DATA.pdb
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.csproj.AssemblyReference.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.AssemblyInfoInputs.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.AssemblyInfo.cs
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.csproj.CoreCompileInputs.cache
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.csproj.CopyComplete
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.dll
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.pdb
+C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\ENTITIES\obj\Debug\netcoreapp3.1\ENTITIES.genruntimeconfig.cache
