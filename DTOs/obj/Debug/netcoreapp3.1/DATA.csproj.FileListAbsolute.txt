@@ -8,3 +8,16 @@ C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\
 C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.csproj.CoreCompileInputs.cache
 C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.dll
 C:\Users\INFT\Desktop\PortalRentas\PortalRentasApi\DTOs\obj\Debug\netcoreapp3.1\DATA.pdb
+C:\Users\INFT\Desktop\PortalRGit\DTOs\bin\Debug\netcoreapp3.1\DATA.deps.json
+C:\Users\INFT\Desktop\PortalRGit\DTOs\bin\Debug\netcoreapp3.1\DATA.dll
+C:\Users\INFT\Desktop\PortalRGit\DTOs\bin\Debug\netcoreapp3.1\DATA.pdb
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.csproj.AssemblyReference.cache
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.AssemblyInfoInputs.cache
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.AssemblyInfo.cs
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.csproj.CoreCompileInputs.cache
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.dll
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.pdb
+C:\Users\INFT\Desktop\PortalRGit\DTOs\bin\Debug\netcoreapp3.1\DATA.runtimeconfig.json
+C:\Users\INFT\Desktop\PortalRGit\DTOs\bin\Debug\netcoreapp3.1\DATA.runtimeconfig.dev.json
+C:\Users\INFT\Desktop\PortalRGit\DTOs\obj\Debug\netcoreapp3.1\DATA.genruntimeconfig.cache

@@ -40,9 +40,10 @@ namespace RentasAPI
 
             services.AddTransient<IContribuyenteQueryService, ContribuyenteQueryService>();
             services.AddTransient<INotificacionDeudaQueryService, NotificacionDeudaQueryService>();
-            
+            services.AddTransient<IUsuariosQueryService, UsuariosQueryService>();
             services.AddControllers().AddNewtonsoftJson(x =>
             x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

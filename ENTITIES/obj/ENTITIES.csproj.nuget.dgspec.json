@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\ENTITIES\\ENTITIES.csproj": {}
+    "C:\\Users\\INFT\\Desktop\\PortalRGit\\ENTITIES\\ENTITIES.csproj": {}
   },
   "projects": {
-    "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\DATA.csproj": {
+    "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\DATA.csproj",
+        "projectUniqueName": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj",
         "projectName": "DATA",
-        "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\DATA.csproj",
+        "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj",
         "packagesPath": "C:\\Users\\INFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\ENTITIES\\ENTITIES.csproj": {
+    "C:\\Users\\INFT\\Desktop\\PortalRGit\\ENTITIES\\ENTITIES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\ENTITIES\\ENTITIES.csproj",
+        "projectUniqueName": "C:\\Users\\INFT\\Desktop\\PortalRGit\\ENTITIES\\ENTITIES.csproj",
         "projectName": "ENTITIES",
-        "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\ENTITIES\\ENTITIES.csproj",
+        "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\ENTITIES\\ENTITIES.csproj",
         "packagesPath": "C:\\Users\\INFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\ENTITIES\\obj\\",
+        "outputPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\ENTITIES\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +98,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\DATA.csproj": {
-                "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRentas\\PortalRentasApi\\DTOs\\DATA.csproj"
+              "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj": {
+                "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj"
               }
             }
           }
@@ -104,6 +114,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.27, )"

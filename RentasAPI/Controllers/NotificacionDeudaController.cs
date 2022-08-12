@@ -27,8 +27,8 @@ namespace RentasAPI.Controllers
         {
             try
             {
-                var listNotificacion = await _notificacionesQueryService.GetNotificacion(start, pageSize);
-                
+                var listNotificacion =  _notificacionesQueryService.GetNotificacion(start, pageSize);
+
                 var result = new GetResponse()
                 {
                     StatusCode = (int)HttpStatusCode.OK,
@@ -59,5 +59,42 @@ namespace RentasAPI.Controllers
                 });
             }
         }
+        //[HttpGet]
+        //public async Task<IActionResult> GetAllLinQ(int start = 1, int pageSize = 10)
+        //{
+        //    try
+        //    {
+        //        var listNotificacion = await _notificacionesQueryService.GetNotificacionLinQ(start, pageSize);
+
+        //        var result = new GetResponse()
+        //        {
+        //            StatusCode = (int)HttpStatusCode.OK,
+        //            Message = "success",
+        //            Result = listNotificacion
+        //        };
+        //        return Ok(result);
+        //    }
+        //    catch (EmptyCollectionException ex)
+        //    {
+        //        _logger.LogError(ex.Message);
+        //        return Ok(new GetResponse()
+        //        {
+        //            StatusCode = (int)HttpStatusCode.MultiStatus,
+        //            Message = ex.Message,
+        //            Result = null
+        //        });
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        _logger.LogError(ex.Message);
+        //        return Ok(new GetResponse()
+        //        {
+        //            StatusCode = (int)HttpStatusCode.BadRequest,
+        //            Message = "Server error",
+        //            Result = null
+        //        });
+        //    }
+        //}
     }
 }

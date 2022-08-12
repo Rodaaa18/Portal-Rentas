@@ -1,6 +1,10 @@
 ﻿using DATA.Models;
+using DATA.SP_Models;
 using ENTITIES.Configurations;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 
 namespace ENTITIES
 {
@@ -25,6 +29,37 @@ namespace ENTITIES
         public virtual DbSet<TiposDocumentos> TiposDocumentos { get; set; }
         public virtual DbSet<TiposOcupacion> TiposOcupacion { get; set; }
         public virtual DbSet<ZonasColectores> ZonasColectores { get; set; }
+        public virtual DbSet<Perfiles> Perfiles { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<UsuariosPerfiles> UsuariosPerfiles { get; set; }
+        public virtual ObjectResult<sp_NotificadosDevuelveDatosConsultaNotificados> Sp_NotificadosDevuelveDatosConsultaNotificados { get; set; }
+        //public virtual ObjectResult<sp_NETCtaCteDevuelveDetalles_Result> sp_NETCtaCteDevuelveDetalles(Nullable<long> idCuenta, Nullable<int> idTyC, Nullable<System.DateTime> fechaAlcance)
+        //{
+        //    var idCuentaParameter = idCuenta.HasValue ?
+        //        new ObjectParameter("IdCuenta", idCuenta) :
+        //        new ObjectParameter("IdCuenta", typeof(long));
+
+        //    var idTyCParameter = idTyC.HasValue ?
+        //        new ObjectParameter("IdTyC", idTyC) :
+        //        new ObjectParameter("IdTyC", typeof(int));
+
+        //    var fechaAlcanceParameter = fechaAlcance.HasValue ?
+        //        new ObjectParameter("FechaAlcance", fechaAlcance) :
+        //        new ObjectParameter("FechaAlcance", typeof(System.DateTime));
+
+        //    return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_NETCtaCteDevuelveDetalles_Result>("sp_NETCtaCteDevuelveDetalles", idCuentaParameter, idTyCParameter, fechaAlcanceParameter);
+        //}
+        public virtual ObjectResult<sp_NotificadosDevuelveDatosConsultaNotificados> sp_NotificadosDevuelveDatosConsultaNotificados(Nullable<int> start , Nullable<int> pageSize)
+        {
+            var startsParameter = start.HasValue ?
+                new ObjectParameter("start", start) :
+                new ObjectParameter("start", typeof(int));
+            var pageSizeParameter = pageSize.HasValue ?
+                new ObjectParameter("pageSize", pageSize) :
+                new ObjectParameter("pageSize", typeof(int));
+            
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_NotificadosDevuelveDatosConsultaNotificados>("sp_NotificadosDevuelveDatosConsultaNotificadosPaginado", startsParameter , pageSizeParameter);
+        }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -49,6 +84,10 @@ namespace ENTITIES
             new TiposDocumentosConfiguration(modelBuilder.Entity<TiposDocumentos>());
             new TiposOcupacionConfiguration(modelBuilder.Entity<TiposOcupacion>());
             new ZonasColectoresConfiguration(modelBuilder.Entity<ZonasColectores>());
+            new PerfilesConfiguration(modelBuilder.Entity<Perfiles>());
+            new UsuariosConfiguration(modelBuilder.Entity<Usuarios>());
+            new UsuariosPerfilesConfiguration(modelBuilder.Entity<UsuariosPerfiles>());
+           
         }        
     }
 }
