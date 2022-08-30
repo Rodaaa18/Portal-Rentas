@@ -114,6 +114,18 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.27, )"
             }
           },
           "imports": [
@@ -323,6 +335,9 @@
               "C:\\Users\\INFT\\Desktop\\PortalRGit\\DATA-ACCESS\\DATA-ACCESS.csproj": {
                 "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DATA-ACCESS\\DATA-ACCESS.csproj"
               },
+              "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj": {
+                "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\DTOs\\DATA.csproj"
+              },
               "C:\\Users\\INFT\\Desktop\\PortalRGit\\MAPPING\\MAPPING.csproj": {
                 "projectPath": "C:\\Users\\INFT\\Desktop\\PortalRGit\\MAPPING\\MAPPING.csproj"
               }
@@ -350,6 +365,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.0, )"
             }
           },
           "imports": [

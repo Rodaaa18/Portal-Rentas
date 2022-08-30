@@ -1,18 +1,11 @@
 ﻿using DATA;
 using DATA_ACCESS.Generic;
-using System.Threading.Tasks;
-using DATA.SP_Models;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using System.Data.Entity.Core.Objects;
-using AutoMapper;
-using MAPPING.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-using DATA.Errors;
-using System.Net;
 
 namespace SERVICE.QueryServices
 {
@@ -52,43 +45,23 @@ namespace SERVICE.QueryServices
                                      select new NotificacionDeudaDTO()
                                      {
                                          IdNotificado = row.Field<int>("IdNotificado"),
-                                         FechaFotificacion = row.Field<DateTime>("FechaFotificacion"),
+                                         FechaNotificacion = row.Field<DateTime>("FechaNotificacion"),
                                          NroNotificacion = row.Field<int>("NroNotificacion"),
                                          ApellidoNombre = row.Field<string>("ApellidoNombre"),
                                          IdCuenta = row.Field<int>("IdCuenta"),
-                                         TyC = row.Field<int>("TyC"),
+                                         TyC = row.Field<string>("TyC"),
+                                         ImporteNeto = row.Field<decimal>("ImporteNeto"),
+                                         ImporteTotal = row.Field<decimal>("ImporteTotal"),
+                                         Interes = row.Field<decimal>("Interes"),
                                          FechaAlcance = row.Field<DateTime>("FechaAlcance"),
                                          Obs = row.Field<string>("Obs"),
                                          Entregado = row.Field<bool>("Entregado"),
+                                         Email = row.Field<string>("Email"),
                                      }).ToList();
             return listNotifications;
 
         }
 
-        //public async Task<ObjectResult<sp_NotificadosDevuelveDatosConsultaNotificados>> GetNotificacionLinQ(int start, int pageSize)
-        //{
-        //    return _unitOfWork._context.sp_NotificadosDevuelveDatosConsultaNotificados(start, pageSize);
-        //}
-        //public List<sp_NotificadosDevuelveDatosConsultaNotificados> GetNotificacionLinQ(int start, int pageSize)
-        //{
-        //    var service = new List<sp_NotificadosDevuelveDatosConsultaNotificados>();
-
-        //    var details = _unitOfWork._context.sp_NotificadosDevuelveDatosConsultaNotificados(start, pageSize);
-        //    if (details.Any())
-        //        service.AddRange(_unitOfWork._context.sp_NotificadosDevuelveDatosConsultaNotificados(start, pageSize).ToList());
-
-
-        //    return service;
-        //}
-        //public List<NotificacionDeudaDTO> GetNotificaciones(int start, int pageSize)
-        //{
-        //    var sp_linQ = new NotificacionDeudaQueryService(_repository, _unitOfWork);
-
-        //    var result = sp_linQ.GetNotificacionLinQ(start, pageSize);
-
-        //    return result.MapTo<List<NotificacionDeudaDTO>>();
-
-
-        //}
+        
     }
 }

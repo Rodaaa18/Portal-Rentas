@@ -8,10 +8,12 @@
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DATA-ACCESS\DATA-ACCESS.csproj" />
+    <ProjectReference Include="..\DTOs\DATA.csproj" />
     <ProjectReference Include="..\MAPPING\MAPPING.csproj" />
   </ItemGroup>
 

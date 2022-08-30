@@ -1469,7 +1469,10 @@
       "DATA/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "EntityFramework": "6.4.4"
+          "EntityFramework": "6.4.4",
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.27"
         },
         "runtime": {
           "DATA.dll": {}

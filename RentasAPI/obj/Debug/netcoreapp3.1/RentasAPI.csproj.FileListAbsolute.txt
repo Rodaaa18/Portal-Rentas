@@ -199,3 +199,5 @@ C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\System.Data.S
 C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\INFT\Desktop\PortalRGit\RentasAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -19,6 +19,7 @@ namespace DATA.SP_Models
         public string? Obs { get; set; }
         public int? NroNotificacion { get; set; }
         public bool? Entregado { get; set; }
+        public string? Email { get; set; }
         public Nullable<int> start { get; set; }
         public Nullable<int> pageSize { get; set; }
     }

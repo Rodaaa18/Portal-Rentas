@@ -9,6 +9,12 @@ using System.Text;
 using DATA.Errors;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using Microsoft.Extensions.Configuration;
+using System.Security.Claims;
+using System;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Collections.Generic;
 
 namespace SERVICE.QueryServices
 {
@@ -19,17 +25,37 @@ namespace SERVICE.QueryServices
     public class UsuariosQueryService : IUsuariosQueryService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IConfiguration _config;
 
-        public UsuariosQueryService(IUnitOfWork unitOfWork)
+        public UsuariosQueryService(IUnitOfWork unitOfWork, IConfiguration config)
         {
             _unitOfWork = unitOfWork;
+            _config = config;
         }
 
         public ActionResult<GetResponse> GetUsuariosRentas(string usuario, string clave)
         {
-            var usuariosQuery = new UsuariosQueryService(_unitOfWork);
+            var usuariosQuery = new UsuariosQueryService(_unitOfWork, _config);
             var claveHasheada = MD5Hash(clave);
+            var secretKey = _config.GetValue<string>("SecretKey");
+            var key = Encoding.ASCII.GetBytes(secretKey);
+
+            var claims = new ClaimsIdentity();
+            claims.AddClaim(new Claim(ClaimTypes.NameIdentifier, usuario));
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = claims,
+                Expires = DateTime.UtcNow.AddHours(4),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var createdToken = tokenHandler.CreateToken(tokenDescriptor);
+            string bearer_token = tokenHandler.WriteToken(createdToken);
+
             
+
             SqlConnection conn = (SqlConnection)_unitOfWork._context.Database.GetDbConnection();
             SqlCommand cmd = conn.CreateCommand();            
             conn.Open();
@@ -75,7 +101,7 @@ namespace SERVICE.QueryServices
                         {
                             StatusCode = (int)HttpStatusCode.OK,
                             Message = "success",
-                            Result = listaProduct
+                            Result = bearer_token
                         };
                     }
                     

@@ -1,4 +1,5 @@
 ﻿using DATA.Errors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace RentasAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("contribuyente")]
     public class ContribuyenteController : ControllerBase

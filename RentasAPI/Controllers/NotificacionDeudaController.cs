@@ -1,18 +1,18 @@
 ﻿using DATA.Errors;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SERVICE.QueryServices;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
 namespace RentasAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("notificacion")]
+   
     public class NotificacionDeudaController : ControllerBase
     {
         private readonly ILogger<NotificacionDeudaController> _logger;
@@ -23,6 +23,7 @@ namespace RentasAPI.Controllers
             _notificacionesQueryService = productQueryService;
         }
         [HttpGet]
+        
         public async Task<IActionResult> GetAll(int start = 1, int pageSize = 10)
         {
             try
