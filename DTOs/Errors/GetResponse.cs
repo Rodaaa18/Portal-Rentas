@@ -8,6 +8,7 @@ namespace DATA.Errors
     {
         public int StatusCode { get; set; }
         public string Message { get; set; }
+        public string Token { get; set; }
         public object Result { get; set; }
     }
 }
