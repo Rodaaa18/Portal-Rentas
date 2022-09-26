@@ -1,8 +1,6 @@
-﻿using DATA;
-using DATA_ACCESS.Generic;
+﻿using DATA_ACCESS.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using System.Linq;
@@ -66,14 +64,6 @@ namespace SERVICE.QueryServices
             var listaNueva = exiteToken.ToList();
 
             var tokenUnico = listaNueva[0].GetValue(0).ToString();
-
-            //var tokes = (from row in dt.AsEnumerable()
-            //                    select new TokenDTO()
-            //                    {
-            //                        Token = row["Token"].ToString(),
-            //                    });
-
-            //var resultado = tokes.Select(t => t.Token.ToString());
 
             return tokenUnico;
         }

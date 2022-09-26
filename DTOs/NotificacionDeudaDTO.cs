@@ -19,5 +19,6 @@ namespace DATA
         public string? Obs { get; set; }
         public bool? Entregado { get; set; }
         public string? Email { get; set; }
+        public int TotalFilas { get; set; }
     }
 }

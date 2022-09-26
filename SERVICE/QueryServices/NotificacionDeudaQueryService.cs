@@ -57,6 +57,7 @@ namespace SERVICE.QueryServices
                                          Obs = row.Field<string>("Obs"),
                                          Entregado = row.Field<bool>("Entregado"),
                                          Email = row.Field<string>("Email"),
+                                         TotalFilas = row.Field<int>("TotalFilas"),
                                      }).ToList();
             return listNotifications;
 

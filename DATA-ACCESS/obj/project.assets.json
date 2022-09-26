@@ -6942,6 +6942,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Desarrollo\\Autogestion\\AutoGestion.Web\\branch\\ggmmautogestionapi\\AutoGestion\\bin": {},
+        "D:\\Desarrollo\\Autogestion\\AutoGestion.Web\\branch\\ggmmautogestionapi\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
